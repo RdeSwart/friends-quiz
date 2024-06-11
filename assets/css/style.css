@@ -23,3 +23,18 @@ h1 {
     margin-left: 33%;
 
 }
+/* Styling for the frame question box */
+.quest-box h3 {
+    font-size: 25px;
+    padding-top: 100px;
+    font-weight: 200;
+}
+/* Styling for the Answer buttons */
+.ans-btn {
+    border: 2px solid black;
+    background: rgb(195, 141, 245);
+    font-weight: 300;
+    width: 50%;
+    border-radius: 25px;
+    padding: 0;
+}
