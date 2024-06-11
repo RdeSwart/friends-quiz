@@ -38,3 +38,12 @@ h1 {
     border-radius: 25px;
     padding: 0;
 }
+.red-dot {
+    color: red;
+}
+.gold-dot {
+    color: gold;
+}
+.aqua-dot {
+    color: aqua;
+}
