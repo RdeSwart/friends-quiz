@@ -1,0 +1,24 @@
+/*General Styling*/
+body {
+    background-color: rgb(195, 141, 245);
+    margin: 0;
+    font-family: "Covered By Your Grace", cursive, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    box-sizing: border-box;
+    text-align: center;
+    font-size: 50px;
+
+}
+h1 {
+    border: 2px solid black;
+    border-radius: 25px;
+    color: white;
+    background-color: black;
+}
+.question-container {
+    background: url("../images/friends-photo-frame.jpg") no-repeat center;
+    width: 540px;
+    height: 540px;
+
+}
