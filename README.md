@@ -1,5 +1,5 @@
-# F.R.I.E.N.D.S Quiz  
-### Welcome to the Ultimate F.R.I.E.N.D.S Quiz
+# F&middot;R&middot;I&middot;E&middot;N&middot;D&middot;S Quiz  
+### Welcome to the Ultimate F&middot;R&middot;I&middot;E&middot;N&middot;D&middot;S Quiz
 Are you a Friends fan, maybe the biggest Stan out there? Well why not prove it with the Ultimate Friends Quiz?
 The Ultimate Friends Quiz has questions from all the series and questions get harder the further along through
 the quiz you go. Will you be the Best of Friends or will you just be a mere acquaintance?
