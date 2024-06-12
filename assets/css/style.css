@@ -16,7 +16,7 @@ body {
 /*Keep footer at the bottom*/
 main {
     flex: 1 0 auto;
-    margin-top: 40px;
+    margin-top: 2px;
 }
 
 /*Styling for the Main Heading*/
@@ -27,6 +27,7 @@ h1 {
     background-color: black;
     width: 100%;
     font-size: 50px;
+    margin-top: 0;
 }
 
 h3 {
@@ -41,9 +42,11 @@ p {
 .red-dot {
     color: red;
 }
+
 .gold-dot {
     color: gold;
 }
+
 .aqua-dot {
     color: aqua;
 }
@@ -51,7 +54,7 @@ p {
 /* Styling for the Questions background Image*/
 .question-container {
     background: url("../images/friends-frame.png") no-repeat center;
-    background-size: cover;
+    background-size: contain;
     position: relative;
 
 }
@@ -59,9 +62,13 @@ p {
 /* Styling for the frame question box */
 .quest-box h3 {
     font-size: 25px;
-    padding-top: 120px;
+    padding-top: 80px;
     font-weight: 200;
     margin-top: 10px;
+}
+
+.quest-box {
+    margin-bottom: 50px;
 }
 
 /* Styling for the Answer buttons */
@@ -70,8 +77,8 @@ p {
     flex-direction: column;
     flex-wrap: wrap;
     align-content: center;
-    padding: 60px 70px 80px 70px;
-    
+    padding: 20px 70px 80px 70px;
+
 }
 
 .ans-btn {
@@ -104,12 +111,13 @@ p {
     left: 28%;
     position: absolute;
     border: 2px solid black;
-    
+
 }
+
 footer {
     font-size: 15px;
     position: absolute;
-    top: 105vh;
+    top: 110vh;
     right: 0;
     bottom: 0;
     left: 0;
@@ -119,48 +127,75 @@ footer {
 
 /*Media Queries*/
 
+/*For phones 398px and up*/
+@media screen and (min-width: 398px) {
+    .ans-btn {
+        width: 60%;
+    }
+}
+
 /*For larger phones and landscape mode (567px and up)*/
 
 @media screen and (min-width: 567px) {
+    .submit {
+        left: 33%;
+    }
+
+    .ans-btn {
+        width: 40%;
+    }
 
 }
-    
+
 
 
 /*For tablets and larger screens(768px and up)*/
 @media screen and (min-width: 768px) {
+
     /*Styling for the Main Heading*/
-h1 {
-    border: 2px solid black;
-    border-radius: 25px;
-    color: white;
-    background-color: black;
-}
-/* Styling for the Questions background Image*/
-.question-container {
-    background: url("../images/friends-frame.png") no-repeat center;
-    width: 540px;
-    height: 540px;
-    margin-left: 33%;
+    h1 {
+        border: 2px solid black;
+        border-radius: 25px;
+        color: white;
+        background-color: black;
+    }
+    h3 {
+        font-size: 35px;
+    }
+    p {
+        font-size: 30px;
+    }
+
+    /* Styling for the Questions background Image*/
+    .question-container {
+        background: url("../images/friends-frame.png") no-repeat center;
+        width: 50%;
+        margin: auto;
+        background-size: contain;
+        width: 455px;
+        height: 568px;
+
+    }
+
+    /* Styling for the frame question box */
+    .quest-box h3 {
+        font-size: 25px;
+        padding-top: 100px;
+        font-weight: 200;
+    }
+
+    /* Styling for the Answer buttons */
+    .ans-btn {
+
+        width: 80%;
+
+    }
+
+    .answer-box {
+        margin-top: 200px;
+    }
 
 }
 
-/* Styling for the frame question box */
-.quest-box h3 {
-    font-size: 25px;
-    padding-top: 100px;
-    font-weight: 200;
-}
-
-/* Styling for the Answer buttons */
-.ans-btn {
-    border: 2px solid black;
-    background: rgb(195, 141, 245);
-    font-weight: 300;
-    width: 50%;
-    border-radius: 25px;
-    padding: 0;
-    transition: all 0.2s;
-}
-
-}
+/* Styling for Large devices - desktops/laptops(912 and up)*/
+@media screen and (min-width: 912px) {}
