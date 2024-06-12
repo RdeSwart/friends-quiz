@@ -107,10 +107,10 @@ p {
     flex-direction: row;
     justify-content: center;
     position: absolute;
-    top: 105%;
     left: 28%;
     position: absolute;
     border: 2px solid black;
+    margin-top: 20px;
 
 }
 
@@ -132,13 +132,17 @@ footer {
     .ans-btn {
         width: 60%;
     }
+
+    .submit {
+        left: 30%;
+    }
 }
 
-/*For larger phones and landscape mode (567px and up)*/
+/*For larger phones and landscape mode (540px and up)*/
 
-@media screen and (min-width: 567px) {
+@media screen and (min-width: 540px) {
     .submit {
-        left: 33%;
+        left: 37%;
     }
 
     .ans-btn {
@@ -152,7 +156,6 @@ footer {
 /*For tablets and larger screens(768px and up)*/
 @media screen and (min-width: 768px) {
 
-    /*Styling for the Main Heading*/
     h1 {
         border: 2px solid black;
         border-radius: 25px;
@@ -166,7 +169,6 @@ footer {
         font-size: 30px;
     }
 
-    /* Styling for the Questions background Image*/
     .question-container {
         background: url("../images/friends-frame.png") no-repeat center;
         width: 50%;
@@ -177,14 +179,12 @@ footer {
 
     }
 
-    /* Styling for the frame question box */
     .quest-box h3 {
         font-size: 25px;
         padding-top: 100px;
         font-weight: 200;
     }
 
-    /* Styling for the Answer buttons */
     .ans-btn {
 
         width: 80%;
@@ -195,7 +195,29 @@ footer {
         margin-top: 200px;
     }
 
+    .submit {
+        left: 40%;
+    }
+
+    .footer {
+        top: 115vh;
+    }
+
 }
 
 /* Styling for Large devices - desktops/laptops(912 and up)*/
-@media screen and (min-width: 912px) {}
+@media screen and (min-width: 912px) {
+    .submit {
+        left: 42%;
+    }
+    footer {
+        top: 150vh;
+    }
+}
+
+/* Styling for very large screens (1200px and up) */
+@media screen and (min-width:1200px) {
+    .submit {
+        left: 45%;
+    }
+}
