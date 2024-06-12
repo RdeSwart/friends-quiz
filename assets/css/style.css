@@ -1,43 +1,36 @@
 /*General Styling*/
+
+
 body {
     background-color: rgb(195, 141, 245);
     margin: 0;
     font-family: "Covered By Your Grace", cursive, sans-serif;
-    font-weight: 400;
+    font-weight: 200;
     font-style: normal;
     box-sizing: border-box;
     text-align: center;
-    font-size: 50px;
-
+    font-size: 35px;
+    padding: 10px 20px;
 }
+/*Styling for the Main Heading*/
 h1 {
     border: 2px solid black;
     border-radius: 25px;
     color: white;
     background-color: black;
+    width: 100%;
+    font-size: 50px;
 }
-.question-container {
-    background: url("../images/friends-photo-frame.jpg") no-repeat center;
-    width: 540px;
-    height: 540px;
-    margin-left: 33%;
 
+h3 {
+    font-size: 20px;
 }
-/* Styling for the frame question box */
-.quest-box h3 {
-    font-size: 25px;
-    padding-top: 100px;
-    font-weight: 200;
+
+p {
+    font-size: 18px;
 }
-/* Styling for the Answer buttons */
-.ans-btn {
-    border: 2px solid black;
-    background: rgb(195, 141, 245);
-    font-weight: 300;
-    width: 50%;
-    border-radius: 25px;
-    padding: 0;
-}
+
+/*Styling for the mid dots in Friends Logo*/
 .red-dot {
     color: red;
 }
@@ -46,4 +39,110 @@ h1 {
 }
 .aqua-dot {
     color: aqua;
+}
+
+/* Styling for the Questions background Image*/
+.question-container {
+    background: url("../images/friends-frame.png") no-repeat center;
+    background-size: cover;
+    position: relative;
+
+}
+
+/* Styling for the frame question box */
+.quest-box h3 {
+    font-size: 25px;
+    padding-top: 120px;
+    font-weight: 200;
+    margin-top: 10px;
+}
+
+/* Styling for the Answer buttons */
+.answer-box {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+    padding: 60px 70px 80px 70px;
+    
+}
+
+.ans-btn {
+    border: 2px solid black;
+    background: #ffff00ad;
+    font-weight: 300;
+    width: 80%;
+    border-radius: 5px;
+    padding: 0;
+    transition: all 0.2s;
+    margin: 2px;
+}
+
+.ans-btn :hover {
+    background-color: rgb(195, 141, 245);
+}
+
+/* Next Button*/
+.submit {
+    width: 150px;
+    padding: 10px;
+    border-radius: 5px;
+    background: #ffe13d;
+    color: black;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    position: absolute;
+    top: 105%;
+    left: 28%;
+    position: absolute;
+    border: 2px solid black;
+    
+}
+footer {
+    font-size: 15px;
+    position: absolute;
+    top: 105vh;
+    left: 30%;
+}
+
+
+/*Media Queries*/
+
+/*For tablets and larger screens(768px and up)*/
+@media screen and (min-width: 768px) {
+    /*Styling for the Main Heading*/
+h1 {
+    border: 2px solid black;
+    border-radius: 25px;
+    color: white;
+    background-color: black;
+}
+/* Styling for the Questions background Image*/
+.question-container {
+    background: url("../images/friends-frame.png") no-repeat center;
+    width: 540px;
+    height: 540px;
+    margin-left: 33%;
+
+}
+
+/* Styling for the frame question box */
+.quest-box h3 {
+    font-size: 25px;
+    padding-top: 100px;
+    font-weight: 200;
+}
+
+/* Styling for the Answer buttons */
+.ans-btn {
+    border: 2px solid black;
+    background: rgb(195, 141, 245);
+    font-weight: 300;
+    width: 50%;
+    border-radius: 25px;
+    padding: 0;
+    transition: all 0.2s;
+}
+
 }
