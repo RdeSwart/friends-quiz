@@ -12,6 +12,13 @@ body {
     font-size: 35px;
     padding: 10px 20px;
 }
+
+/*Keep footer at the bottom*/
+main {
+    flex: 1 0 auto;
+    margin-top: 40px;
+}
+
 /*Styling for the Main Heading*/
 h1 {
     border: 2px solid black;
@@ -103,11 +110,22 @@ footer {
     font-size: 15px;
     position: absolute;
     top: 105vh;
-    left: 30%;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    text-align: center;
 }
 
 
 /*Media Queries*/
+
+/*For larger phones and landscape mode (567px and up)*/
+
+@media screen and (min-width: 567px) {
+
+}
+    
+
 
 /*For tablets and larger screens(768px and up)*/
 @media screen and (min-width: 768px) {
