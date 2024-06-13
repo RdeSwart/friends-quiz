@@ -1,11 +1,11 @@
 //Show Rules Page before Game loads
 window.onload = function() {
-    document.getElementById("rules");
-}
+    document.getElementById("rules").style.display="block";
+};
 //Add event listener to click Ok Button and remove rules page
 document.getElementById("rulesOk").addEventListener("click", function() {
-    document.getElementById("rules").display = "none";
-})
+    document.getElementById("rules").style.display = "none";
+});
 
 
 
