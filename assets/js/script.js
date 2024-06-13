@@ -1,7 +1,17 @@
-//Wait for Dom to load before game runs
-document.addEventListener("DOMContentLoaded", function() {
-    let buttons = document.getElementsByTagName("button");
+//Show Rules Page before Game loads
+window.onload = function() {
+    document.getElementById("rules");
+}
+//Add event listener to click Ok Button and remove rules page
+document.getElementById("rulesOk").addEventListener("click", function() {
+    document.getElementById("rules").display = "none";
 })
+
+
+
+
+
+
 
 //Game Questions as Objects with Booleans
 
