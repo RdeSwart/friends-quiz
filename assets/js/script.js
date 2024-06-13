@@ -99,4 +99,10 @@ const questions = [
                                     ]
                                 },
 
-]
+];
+
+let currentQuestion = document.getElementById("question");
+let currentAnswer = document.getElementsByClassName("answer-box");
+let score = 0;
+let nextQuestion = document.getElementsByClassName("next-btn");
+let currentQuestionIndex = 0;
