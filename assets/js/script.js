@@ -120,47 +120,55 @@ let score = 0;
 
 
 function showQuestion() {
+    // Select random question
 
+    // Check if question has already been asked
+    
     const question = questions[currentQuestion];
+    // Display question
     questionElement.innerText = question.question;
 
-
-question.answers.forEach((answer, index) => {
-  const button = document.createElement("button");
-  button.innerHTML = answer.text;
-  button.classList.add("ans-btn");
-  answerElement[index].appendChild(button);
-  button.addEventListener("click", selectAnswer);
-});
+    // Display answers
+    //  Get list of answer buttons
+    const answerButtons = document.getElementsByClassName("ans-btn")
+    question.answers.forEach((answer, index) => {
+        console.log("index", index)
+        answerButtons[index].text = answer.text
+        // const button = document.createElement("button");
+        // button.innerHTML = answer.text;
+        // button.classList.add("ans-btn");
+        // answerElement[index].appendChild(button);
+        // button.addEventListener("click", selectAnswer);
+    });
 }
 
 function selectAnswer(event) {
     const answerText = event.target.innerText;
     const answer = questions[questionElement].answers;
-  
+
     if (answers.correct === true) {
-      score++;
+        score++;
     }
-  
+
     currentQuestion++;
-  
+
     if (currentQuestion < questions.length) {
-      showQuestion();
+        showQuestion();
     } else {
-      showResult();
+        showResult();
     }
 }
-  
-  
-  function showResult() {
+
+
+function showResult() {
     //questionContainer??
-    question-container.innerHTML ; `  
+    question - container.innerHTML; `  
       <h1>Quiz Completed!</h1>
       <p>Your score: ${score}/${questions.length}</p>
     `;
-  }
-  
-  showQuestion();
+}
+
+showQuestion();
 
 
 
