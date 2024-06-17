@@ -122,20 +122,20 @@ let score = 0;
 function showQuestion() {
 
     const question = questions[currentQuestion];
-    questionElement.innerText = currentQuestion.questions;
+    questionElement.innerText = question.question;
 
 
-currentQuestion.answers.forEach(answer => {
+question.answers.forEach((answer, index) => {
   const button = document.createElement("button");
   button.innerHTML = answer.text;
   button.classList.add("ans-btn");
-  answerBox.appendChild(button);
+  answerElement[index].appendChild(button);
   button.addEventListener("click", selectAnswer);
 });
 }
 
 function selectAnswer(event) {
-    const answerElement = event.target;
+    const answerText = event.target.innerText;
     const answer = questions[questionElement].answers;
   
     if (answers.correct === true) {
