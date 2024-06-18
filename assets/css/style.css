@@ -24,6 +24,11 @@ body {
     left: 0;
 }
 
+ol {
+    font-size: 20px;
+    text-align: left;
+}
+
 #rulesOk {
     width: 150px;
     padding: 10px;
@@ -82,15 +87,19 @@ p {
     background: url("../images/friends-frame.png") no-repeat center;
     background-size: contain;
     position: relative;
+    width: 320px;
 
 }
 
 /* Styling for the frame question box */
 .quest-box h3 {
-    font-size: 25px;
-    padding-top: 80px;
+    width: 200px;
+    height: 66px;
+    margin: 0px;
+    padding-left: 50px;
+    font-size: 20px;
+    padding-top: 90px;
     font-weight: 200;
-    margin-top: 10px;
 }
 
 .quest-box {
@@ -99,11 +108,14 @@ p {
 
 /* Styling for the Answer buttons */
 .answer-box {
+    margin-bottom: 0px;
     display: flex;
     flex-direction: column;
-    flex-wrap: wrap;
     align-content: center;
-    padding: 20px 70px 80px 70px;
+    padding: 0px 70px 80px 70px;
+    flex-wrap: wrap;
+    position: relative;
+    z-index: -1;
 
 }
 
@@ -169,12 +181,25 @@ footer {
 /*For phones 398px and up*/
 @media screen and (min-width: 398px) {
     .ans-btn {
-        width: 60%;
+        width: 80%;
     }
 
     .submit {
         left: 30%;
     }
+    .quest-box h3 {
+        font-size: 20px;
+        padding-top: 90px;
+        font-weight: 200;
+        
+    }
+    .answer-box {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-content: center;
+        padding: 0px 70px 80px 70px;
+}
 }
 
 /*For larger phones and landscape mode (540px and up)*/
