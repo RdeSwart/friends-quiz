@@ -239,18 +239,19 @@ footer {
 /*For tablets and larger screens(768px and up)*/
 @media screen and (min-width: 768px) {
 
-    /*h1 {
-        border: 2px solid;
-        border-radius: 25px;
-        color: white;
-        background-color: black;
-    }*/
+    /* Rules Page*/
+    ol {
+        font-size: 35px;
+        
+    }
+
+    /*Main page*/
     h3 {
         font-size: 35px;
     }
 
     p {
-        font-size: 30px;
+        font-size: 40px;
     }
 
     .question-container {
@@ -298,13 +299,18 @@ footer {
 
 /* Styling for Large devices - desktops/laptops(912 and up)*/
 @media screen and (min-width: 912px) {
+
+    /*Rules Page*/
     ol {
         font-size: 35px;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
+        
+    }
+    #rulesOk {
+        width: 300px;
+        font-size: 1em;
     }
 
+    /*Main Page*/
     .submit {
         left: 42%;
     }
@@ -316,7 +322,17 @@ footer {
 
 /* Styling for very large screens (1200px and up) */
 @media screen and (min-width:1200px) {
+
+    /* Rules Page*/
+    /*ol {
+        font-size: 35px;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }*/
+
     .submit {
         left: 45%;
     }
+
 }
