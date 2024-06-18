@@ -112,7 +112,7 @@ const questions = [
 ];
 
 const questionElement = document.getElementById("question");
-const answerElement = document.getElementsByClassName("ans-btn");
+//const answerElement = document.getElementsByClassName("ans-btn");
 const submitButton = document.getElementsByClassName("next-btn");
 
 let currentQuestion = 0;
@@ -133,12 +133,8 @@ function showQuestion() {
     const answerButtons = document.getElementsByClassName("ans-btn")
     question.answers.forEach((answer, index) => {
         console.log("index", index)
-        answerButtons[index].text = answer.text
-        // const button = document.createElement("button");
-        // button.innerHTML = answer.text;
-        // button.classList.add("ans-btn");
-        // answerElement[index].appendChild(button);
-        // button.addEventListener("click", selectAnswer);
+        answerButtons[index].innerHTML = answer.text
+        
     });
 }
 
@@ -198,39 +194,3 @@ showQuestion();
 
 
 
-/*//Function to display Questions
-/*function askQuestion() {
-    for (var i =0; i < questions.length; i++) {
-        var question = questions[i].question;
-        var answer = questions[i].answers;
-
-        var userAns = ();
-
-        if (userAns === true) {
-            alert("Well done!");
-        } else {
-            alert("Nope, that's wrong!")
-        }
-    }
-}
-*/
-
-/*function showQuestion() {
-    const questionText = document.getElementById("question");
-    questionText.textContent = questions[currentQuestion].question;
-
-    const answers = document.querySelectorAll(".ans-btn");
-    answers.forEach((answers, index) => {
-        answer.textContent = questions[currentQuestion].answers[index];
-    });
-
-    /*if (userAns === true) {
-        alert("Well done!");
-    } else {
-        alert("Nope, that's wrong!")
-    }*/
-
-
-//Function to calculate score
-
-//askQuestion();
