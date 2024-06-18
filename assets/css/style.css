@@ -12,6 +12,7 @@ body {
     font-size: 35px;
     padding: 10px 20px;
 }
+
 /*Styles for Rules Page*/
 #rules {
     position: fixed;
@@ -187,19 +188,25 @@ footer {
     .submit {
         left: 30%;
     }
+
     .quest-box h3 {
         font-size: 20px;
         padding-top: 90px;
         font-weight: 200;
-        
+
     }
+
     .answer-box {
         display: flex;
         flex-direction: column;
         flex-wrap: wrap;
         align-content: center;
         padding: 0px 70px 80px 70px;
-}
+    }
+
+    .question-container {
+        margin-left: 30px;
+    }
 }
 
 /*For larger phones and landscape mode (540px and up)*/
@@ -210,7 +217,19 @@ footer {
     }
 
     .ans-btn {
-        width: 40%;
+        width: 80%;
+    }
+
+    .question-container {
+        margin-left: 20%;
+    }
+
+    .answer-box {
+        padding-bottom: 100px;
+    }
+
+    .quest-box h3 {
+        padding-top: 110px;
     }
 
 }
@@ -229,6 +248,7 @@ footer {
     h3 {
         font-size: 35px;
     }
+
     p {
         font-size: 30px;
     }
@@ -245,23 +265,29 @@ footer {
 
     .quest-box h3 {
         font-size: 25px;
-        padding-top: 100px;
+        padding-top: 120px;
         font-weight: 200;
+        padding-left: 120px;
     }
 
     .ans-btn {
 
         width: 80%;
-        font-size: .4em;
+        font-size: .5em;
 
     }
 
     .answer-box {
-        margin-top: 200px;
+        margin-top: 150px;
     }
 
     .submit {
         left: 40%;
+    }
+
+    #results {
+        margin-left: 25%;
+        width: 50%;
     }
 
     .footer {
@@ -272,9 +298,17 @@ footer {
 
 /* Styling for Large devices - desktops/laptops(912 and up)*/
 @media screen and (min-width: 912px) {
+    ol {
+        font-size: 35px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
     .submit {
         left: 42%;
     }
+
     footer {
         top: 150vh;
     }
