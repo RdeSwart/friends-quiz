@@ -120,15 +120,8 @@ let score = 0;
 
 function showQuestion() {
     // Select random question
-
-    function randomQuestion() {
-
-        let random = Math.floor(Math.random() * questions.length);
-        return questions[random];
-
-        console.log(randomQuestion);
-    }
-
+//Use sort method
+questions.sort(() => Math.random() - 0.5);
     // Check if question has already been asked
 
     const question = questions[currentQuestion];
