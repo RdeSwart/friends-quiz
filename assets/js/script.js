@@ -122,7 +122,7 @@ function showQuestion() {
     // Select random question
 //Use sort method
 questions.sort(() => Math.random() - 0.5);
-    // Check if question has already been asked
+    
 
     const question = questions[currentQuestion];
     // Display question
@@ -149,6 +149,8 @@ function selectAnswer(event) {
     currentQuestion++;
 
     if (currentQuestion < questions.length) {
+        // Check if question has already been asked
+        questions.splice(currentQuestion -1, 1);
         showQuestion();
     } else {
         showResult();
@@ -168,7 +170,7 @@ showQuestion();
 //Event listener to Next Button
 submitButton.addEventListener("click", selectAnswer);
 
-
+//start quiz over again
 
 
 
