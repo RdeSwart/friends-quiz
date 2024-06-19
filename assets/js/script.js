@@ -112,8 +112,7 @@ const questions = [
 ];
 
 const questionElement = document.getElementById("question");
-//const answerElement = document.getElementsByClassName("ans-btn");
-const submitButton = document.getElementsByClassName("next-btn");
+const submitButton = document.querySelector(".next-btn");
 
 let currentQuestion = 0;
 let score = 0;
@@ -122,27 +121,35 @@ let score = 0;
 function showQuestion() {
     // Select random question
 
+    function randomQuestion() {
+
+        let random = Math.floor(Math.random() * questions.length);
+        return questions[random];
+
+        console.log(randomQuestion);
+    }
+
     // Check if question has already been asked
-    
+
     const question = questions[currentQuestion];
     // Display question
     questionElement.innerText = question.question;
 
     // Display answers
     //  Get list of answer buttons
-    const answerButtons = document.getElementsByClassName("ans-btn")
+    const answerButtons = document.querySelectorAll(".ans-btn")
     question.answers.forEach((answer, index) => {
-        console.log("index", index)
         answerButtons[index].innerHTML = answer.text
-        
+
     });
 }
 
 function selectAnswer(event) {
     const answerText = event.target.innerText;
-    const answer = questions[questionElement].answers;
+    const answer = questions[currentQuestion].answers;
 
-    if (answers.correct === true) {
+
+    if (answer.correct === true) {
         score++;
     }
 
@@ -157,14 +164,16 @@ function selectAnswer(event) {
 
 
 function showResult() {
-    //questionContainer??
-    question - container.innerHTML; `  
+    const resultContainer = document.getElementById("results");
+    resultContainer.innerHTML; `  
       <h1>Quiz Completed!</h1>
       <p>Your score: ${score}/${questions.length}</p>
     `;
 }
 
 showQuestion();
+//Event listener to Next Button
+submitButton.addEventListener("click", selectAnswer);
 
 
 
