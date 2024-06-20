@@ -165,6 +165,20 @@ p {
     margin-top: 80px;
 }
 
+figcaption {
+    font-size: 20px;
+}
+
+#audio {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+audio {
+    height: 25px;
+}
+
 footer {
     font-size: 15px;
     position: absolute;
