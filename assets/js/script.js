@@ -55,7 +55,7 @@ const questions = [
         ]
     },
     {
-        question: "Will & Rosss co-founded what club in high school?",
+        question: "Will & Rosss co-founded what club in high school?",//this question is too long - change?
         answers: [
             { text: "The I Hate Rachel Green Club.", correct: true },
             { text: "The Maths Whizz Kidz Club", correct: false },
@@ -112,7 +112,7 @@ const questions = [
 ];
 
 const questionElement = document.getElementById("question");
-const submitButton = document.querySelector(".next-btn");
+const submitButton = document.querySelector(".nxt-btn");
 
 let currentQuestion = 0;
 let score = 0;
@@ -130,30 +130,27 @@ function showQuestion() {
     questionElement.innerText = question.question;
 
     // Display answers
-    //  Get list of answer buttons
+    //  Get list of answer buttons and add event listener
     const answerButtons = document.querySelectorAll(".ans-btn")
     question.answers.forEach((answer, index) => {
-        answerButtons[index].innerHTML = answer.text
-
-        //Add event listener to answer buttons
-        answerButtons[index].addEventListener("click", function(event) {
-          
-        })
-    })
+        answerButtons[index].innerHTML = answer.text;
+        answerButtons[index].addEventListener("click", selectAnswer);
+        console.log("Button clicked");
+})
 }
 
-    
 
 
+//If correct answer is selected, add to score
 function selectAnswer(event) {
     const answerText = event.target.innerText;
     const answer = questions[currentQuestion].answers;
 
-
     if (answer.correct === true) {
         score++;
     }
-
+    
+}
     currentQuestion++;
 
     if (currentQuestion < questions.length) {
@@ -163,12 +160,13 @@ function selectAnswer(event) {
     } else {
         showResult();
     }
-}
+
+
 
 
 function showResult() {
     const resultContainer = document.getElementById("results");
-    resultContainer.innerHTML; `  
+    resultContainer.innerHTML = `  
       <h1>Quiz Completed!</h1>
       <p>Your score: ${score}/${questions.length}</p>
     `;
@@ -176,7 +174,12 @@ function showResult() {
 
 showQuestion();
 //Event listener to Next Button
-submitButton.addEventListener("click", selectAnswer);
+function nextQuestion() {
+    submitButton.addEventListener("click", nextQuestion);
+    console.log("next button clicked")
+}
+
+
 
 //start quiz over again
 
