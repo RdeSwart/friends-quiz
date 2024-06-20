@@ -31,7 +31,7 @@ const questions = [
         answers: [
             { text: "Four Times", correct: false },
             { text: "Three Times", correct: true },
-            { text: "Two", correct: false },
+            { text: "Twice", correct: false },
             { text: "Once", correct: false }
         ]
     },
@@ -55,7 +55,7 @@ const questions = [
         ]
     },
     {
-        question: "Brad Pitt and David Schwimmer's characters cofounded what club in high school?",
+        question: "Will & Rosss co-founded what club in high school?",
         answers: [
             { text: "The I Hate Rachel Green Club.", correct: true },
             { text: "The Maths Whizz Kidz Club", correct: false },
@@ -120,9 +120,10 @@ let score = 0;
 
 function showQuestion() {
     // Select random question
-//Use sort method
-questions.sort(() => Math.random() - 0.5);
-    
+    //Use sort method
+    questions.sort(() => Math.random() - 0.5);
+
+    //Loop through all 10 questions and not just 5 - questions.length - 1???? not working*****
 
     const question = questions[currentQuestion];
     // Display question
@@ -134,8 +135,15 @@ questions.sort(() => Math.random() - 0.5);
     question.answers.forEach((answer, index) => {
         answerButtons[index].innerHTML = answer.text
 
-    });
+        //Add event listener to answer buttons
+        answerButtons[index].addEventListener("click", function(event) {
+          
+        })
+    })
 }
+
+    
+
 
 function selectAnswer(event) {
     const answerText = event.target.innerText;
@@ -150,7 +158,7 @@ function selectAnswer(event) {
 
     if (currentQuestion < questions.length) {
         // Check if question has already been asked
-        questions.splice(currentQuestion -1, 1);
+        questions.splice(currentQuestion - 1, 1);
         showQuestion();
     } else {
         showResult();
