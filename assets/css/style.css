@@ -98,7 +98,7 @@ p {
     height: 66px;
     margin: 0px;
     padding-left: 50px;
-    font-size: 20px;
+    font-size: 15px;
     padding-top: 90px;
     font-weight: 200;
 }
@@ -108,7 +108,7 @@ p {
 }
 
 /* Styling for the Answer buttons */
-.answer-box {
+.answer-buttons {
     margin-bottom: 0px;
     display: flex;
     flex-direction: column;
@@ -133,7 +133,7 @@ p {
     font-size: .5em;
 }
 
-.ans-btn :active {
+.ans-btn :hover {
     background-color: rgb(195, 141, 245);
 }
 
@@ -210,7 +210,7 @@ footer {
 
     }
 
-    .answer-box {
+    .answer-buttons {
         display: flex;
         flex-direction: column;
         flex-wrap: wrap;
@@ -238,7 +238,7 @@ footer {
         margin-left: 20%;
     }
 
-    .answer-box {
+    .answer-buttons {
         padding-bottom: 100px;
     }
 
@@ -292,7 +292,7 @@ footer {
 
     }
 
-    .answer-box {
+    .answer-buttons {
         margin-top: 150px;
     }
 
