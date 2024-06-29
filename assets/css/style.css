@@ -60,7 +60,6 @@ main {
 
 /*Styling for the Main Heading*/
 h1 {
-    border: 2px solid black;
     border-radius: 25px;
     color: white;
     background-color: black;
@@ -77,6 +76,7 @@ p {
     font-size: 18px;
     display: flex;
     margin: 0 auto;
+    justify-content: center;
 }
 
 /*Styling for the mid dots in Friends Logo*/
