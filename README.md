@@ -3,46 +3,46 @@
 ### Welcome to the Ultimate F&middot;R&middot;I&middot;E&middot;N&middot;D&middot;S Quiz
 
 Are you a Friends fan, maybe the biggest Stan out there? Well why not prove it with the Ultimate Friends Quiz?
-The Ultimate Friends Quiz has questions from all the series and questions get harder the further along through
-the quiz you go. Will you be the Best of Friends or will you just be a mere acquaintance?
+The Ultimate Friends Quiz has questions from all of the series that will challenge even the most die hard fan! Will you be the Best of Friends or will you just be a mere acquaintance?
 
 I created the Friends Quiz, because as a huge fan myself, I love testing my knowledge on the subject. Users will find the quiz to be somewhat of a challenge
 as they navigate through the simple, intuitive and fun layout.
 
-## CONTENTS LINKS
+## CONTENT LINKS
 
-### User Experience(UX/UI)
+### [User Experience(UX/UI)](#user-experience)
 
-- User stories
-- Developer stories
-- Color Scheme
-- Typography
-- Wireframes
+- [User stories](#user-stories)
+- [Developer stories](#devoper-stories)
+- [Color Scheme](#color-scheme)
+- [Typography](#typography)
+- [Wireframes](#wire-frames)
 
-### Features
+### [Features](#features)
 
-- Overview
-- Question and Answer Box
-- Next button
-- Keeping Score
+- [Overview](#overview)
+- [Question and Answer Box](#question-and-answer-box)
+- [Next button](#next-button)
+- [Keeping Score](#keeping-score)
+- [Theme Tune](#theme-tune)
 
-### Technologies Used
+### [Technologies Used](#technologies-used)
 
-- Languages Used
-- Frameworks, Libraries and Programs
+- [Languages Used](#languages)
+- [Frameworks, Libraries and Programs](#frameworks-libraries-and-programs)
 
-### Testing
+### [Testing](#testing)
 
-- Code validation
-- Accessability
-- Testing Table
+- [Code validation](#code-validation)
+- [Accessability](#accessability)
+- [Testing Table](#testing-table)
 
 ## User Experience
 
-The quiz is of a simple but fully responsive design, using JavaScript to create a dynamic and interactive experience for the user. The question box has a multichoice answer section, that will only allow one attempt at the correct answer. If the correct answer is selected, a pop up alert box will appear with a Friends themed GIF. The user
-will the click on the "Next" button to take them to the next question, and the computer will tally up their scores.
+The quiz is of a simple but fully responsive design, using JavaScript to create a dynamic and interactive experience for the user. The question box has a multichoice answer section, that will only allow one attempt at the correct answer. If the correct answer is selected, it will change to purple, if incorrect, it will change to red. The user
+will then click on the "Next" button to take them to the next question, and the computer will tally up their scores.
 
-At the end of the quiz, depending on how well they did, there will be a Friend's theme anicdote to applaud or tease them!
+At the end of the quiz, the Next button will change to Play Again and the quiz will reset.
 
 ### User Stories
 
@@ -54,25 +54,32 @@ At the end of the quiz, depending on how well they did, there will be a Friend's
 ### As a Developer:
 
 1. I want users to feel engaged in the game.
-2. I want the color-theme to envoke a feeling of familiarity and nostalgia
+2. I want the color-theme to envoke a feeling of familiarity and nostalgia.
 3. I want users to recognise quickly how simialr the font used is to the original.
-4.
+4. I want users to be able to intuitively know which buttons to click.
+5. I want users to find instructions on game play easy to understand.
 
 ### Color Scheme
 
 I decided to use the main color scheme in Monica's appartment which are widely recognised and cherished. Being purple and Gold,they also
-go together very aesthicially. I also embedded an image of the notorious yellow frame which sits on Monica's door.
-Another instantly recognisable feature on the sitcom.
+go together very aesthicially. I also embedded an image of the notorious yellow frame which sits on Monica's door, another instantly recognisable feature on the sitcom.
 The colors are used for the rules page and the main page for fluidity.
 
 ### Typography
 
-I used Google fonts to find the closest to the Friends typography. To make the Friends logo more authentic, I used middots and coloured them to the friends logo
+I used Google fonts, Covered By Your Grace", which I found to be the closest to the Friends original typography with sans-serif to fall back on, should the users system fail to load the Google font.
+
+ To make the Friends logo more authentic, I used middots and coloured them to the friends logo. I also used this theme in the Next Button and on the windows tab title.
 
 ### Wire frames
 
 As per The five planes, I used Balsamique Wireframes to conceptualize my vision for the quiz. I made the main quiz on mobile and desktops to see how it would look.
-[Insert screenshots here}]
+
+Mobile View:
+![Mobile View](assets/readme-files/friends-quiz-mobile.png)
+
+Windows View:
+![Windows view](assets/readme-files/friends-quiz-windows.png)
 
 ## Features
 
@@ -94,6 +101,18 @@ Using Middots again, I made the Next Button look like the Friends logo. hover an
 The score card is located under the Next button and is big enough that the user can easily glance during game play to see the score which is tallied up
 as the game continues.
 
+### Theme Tune
+
+I added in the Friends theme tune song with added controls for an even more immersive experience, should the user want to listen to it. 
+It will not play automatically as this can have a negative effect on the user's experience.
+
+### Future Features
+For the future of the site, I would like to add more questions to the main quiz and maybe categorise them into the different series'.
+
+I would also like to add a Top-Scorer feature, so users can battle eachother from around the world.
+
+I would also like to add a category quiz on the characters and actors who play them.
+
 ## Technologies used
 
 ### Languages
@@ -105,26 +124,44 @@ as the game continues.
 ### Frameworks, Libraries and Programs
 
 ### Google Fonts
+I imported Google fonts and placed it in the style tag in the HTML file.
 
 ### Favicon
+For my Favicon, I used The Noun Project, and changed the colour to purple for theme fluidity.
 
-###
+### Gitpod
+I used Gitpod to write the code, commit messages and push to Github.
+
+### Github
+I used Github to store my project and to deploy it.
+
 
 ## Testing
 
+
 ### Code Validation
 
-I used W3C to validate the CSS, which came back with no errors
-[insert screenshot here******]
-I used Jigsaw to validate the HTML file, which returned no errors
-[insert screenshot here******]
-i used JSHint to validate the javascript code, which resulted in no errors
+I used W3C Jigsaw to validate the CSS, which came back with no errors
+![CSS Validation](assets/readme-files/CSS-validation.png)
+
+I did get some warnings relating to the border on my H1 main heading, I corrected this and when re-validating it came back clear with no more warnings. I didn't realise you didn't have to have a border in order to use border-radius styling.
+![CSS Warnings](assets/readme-files/CSS-warning.png)
+
+I used W3C Markup to validate the HTML file, which returned no errors.
+![HTML Validation](assets/readme-files/HTML-validation.png) 
+
+I used JSHint to validate the javascript code, which resulted in no errors
 [insert screenshot here******]
 
-### Accessability
+### Accessibility
 
-To check the sites accessability, I used Lighthouse
-[insert screenshot here******]
+To check the sites accessibility, I used Lighthouse in Dev Tools
+
+Rules Page:
+![Lighthouse Rules Page](assets/readme-files/lighthouse-rules-page.png)
+
+Main Page:
+![Lighthouse Main Page](assets/readme-files/lighthouse-main-page.png)
 
 ### Testing Table
 
@@ -144,3 +181,17 @@ To check the sites accessability, I used Lighthouse
 | Media Player play      | Theme tune plays at user set volume                               | Pass       |
 | End Game popup         | User score out of 10 alert box                                    | Pass       |
 | Next Game              | when questions reach 10, restart game                             | Pass       |
+
+## Deployment
+I used Gitpod to develop the code and then pushed to Github.
+
+Here are the following steps I used to deploy the website from Github repository to Github Pages.
+
+1. Log in to Github and find the repository you wish to deploy.
+2. At the top of the page, click on "Settings".
+3. On the left hand side of the settings page, under Code and automation, click on "Pages".
+4. From the source section drop-down menu, select the Master Branch.
+5. Once the master branch has been selected, the page will be automatically refreshed with a detailed ribbon display to indicate the successful deployment.
+
+The live link can be found here:
+[Friends Quiz](https://rdeswart.github.io/friends-quiz/)
