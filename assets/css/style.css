@@ -1,8 +1,6 @@
 /*General Styling*/
-
-
-body {
-    background-color: rgb(195, 141, 245);
+#mainPage {
+    background: rgb(195, 141, 245);
     margin: 0;
     font-family: "Covered By Your Grace", cursive, sans-serif;
     font-weight: 200;
@@ -30,6 +28,14 @@ ol {
     text-align: left;
 }
 
+#quizBegin {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 auto;
+
+}
+
 #rulesOk {
     width: 150px;
     padding: 10px;
@@ -39,9 +45,10 @@ ol {
     flex-direction: row;
     justify-content: center;
     border: 2px solid yellow;
-    margin-top: 20px;
     font-family: 'Covered By Your Grace', sans-serif;
     font-size: .8em;
+    display: flex;
+    margin: 20px auto 0 auto;
 }
 
 
@@ -68,6 +75,8 @@ h2 {
 
 p {
     font-size: 18px;
+    display: flex;
+    margin: 0 auto;
 }
 
 /*Styling for the mid dots in Friends Logo*/
@@ -133,12 +142,20 @@ p {
     font-size: .5em;
 }
 
-.ans-btn :hover {
+.ans-btn:hover {
     background-color: rgb(195, 141, 245);
 }
 
+.correct {
+    color: green;
+}
+
+.incorrect {
+    color: blue;
+}
+
 /* Next Button*/
-.submit {
+#submit {
     width: 150px;
     padding: 10px;
     border-radius: 5px;
@@ -150,9 +167,9 @@ p {
     position: absolute;
     left: 28%;
     border: 2px solid yellow;
-    margin-top: 20px;
     font-family: 'Covered By Your Grace', sans-serif;
     font-size: .5em;
+    margin-top: 20px;
 
 }
 
@@ -169,7 +186,7 @@ figcaption {
     font-size: 20px;
 }
 
-#audio {
+#themeTune {
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -199,7 +216,7 @@ footer {
         width: 80%;
     }
 
-    .submit {
+    #submit {
         left: 30%;
     }
 
@@ -226,7 +243,7 @@ footer {
 /*For larger phones and landscape mode (540px and up)*/
 
 @media screen and (min-width: 540px) {
-    .submit {
+    #submit {
         left: 37%;
     }
 
@@ -296,8 +313,9 @@ footer {
         margin-top: 150px;
     }
 
-    .submit {
-        left: 40%;
+    #submit {
+        left: 40%; 
+        
     }
 
     #results {
@@ -322,10 +340,11 @@ footer {
     #rulesOk {
         width: 300px;
         font-size: 1em;
+        
     }
 
     /*Main Page*/
-    .submit {
+    #submit {
         left: 42%;
     }
 
@@ -345,7 +364,7 @@ footer {
         flex-wrap: wrap;
     }*/
 
-    .submit {
+    #submit {
         left: 45%;
     }
 
