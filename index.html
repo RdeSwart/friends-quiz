@@ -13,16 +13,24 @@
     <!--Google Fonts link-->
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Covered+By+Your+Grace&display=swap');
+
+        /* .correct {
+            color: green;
+        }
+
+        .incorrect {
+            color: blue;
+        } */
     </style>
     <link rel="stylesheet" href="assets/css/style.css">
     <title>F&middot;R&middot;I&middot;E&middot;N&middot;D&middot;S Quiz</title>
 </head>
 
-<body>
+<body id="mainPage">
     <header>
         <h1>The Ultimate F<span class="red-dot">&middot;</span>R<span class="aqua-dot">&middot;</span>I<span
-        class="gold-dot">&middot;</span>E<span class="red-dot">&middot;</span>N<span
-        class="gold-dot">&middot;</span>D<span class="aqua-dot">&middot;</span>S Quiz</h1>
+                class="gold-dot">&middot;</span>E<span class="red-dot">&middot;</span>N<span
+                class="gold-dot">&middot;</span>D<span class="aqua-dot">&middot;</span>S Quiz</h1>
     </header>
     <main>
         <!--Rules Page that will show on first load and not display anymore when ok button is pressed-->
@@ -37,8 +45,10 @@
                 <li>Don't get <strong>Bamboozled!</strong></li>
                 <li>Good Luck!</li>
             </ol>
-            <p>When you're ready, click Begin Quiz</p>
-            <button id="rulesOk">Begin Quiz</button>
+            <div id="quizBegin">
+                <p>When you're ready, click Begin Quiz</p>
+                <button id="rulesOk">Begin Quiz</button>
+            </div>
         </div>
         <!--Quiz Page-->
         <h2>Can you prove you are the Ultimate Friends Fan?</h2>
@@ -51,33 +61,33 @@
 
             <div class="answer-buttons">
                 <button class="ans-btn">Answer 1</button>
-                <button class="ans-btn">Answer 1</button>
-                <button class="ans-btn">Answer 1</button>
-                <button class="ans-btn">Answer 1</button>
+                <button class="ans-btn">Answer 2</button>
+                <button class="ans-btn">Answer 3</button>
+                <button class="ans-btn">Answer 4</button>
 
             </div>
 
         </div>
         <div class="next-btn">
-            <button class="submit" type="submit">N<span class="red-dot">&middot;</span>E<span
+            <button id="submit" type="submit">N<span class="red-dot">&middot;</span>E<span
                     class="aqua-dot">&middot;</span>X<span class="gold-dot">&middot;</span>T</button>
         </div>
         <div id="results">Score:
-            <span id="user-score">0</span>
-            <span id="total-score">/10</span>
+            <p><span id="user-score">0</span>
+                /10</p>
         </div>
-        <div id="audio">
-        <figure>
-            <figcaption>Play the theme tune here:</figcaption>
+        <div id="themeTune">
+            <figure>
+                <figcaption>Play the theme tune here:</figcaption>
 
-        
-        <audio controls src="assets/audio/Friends.mp3" id="audio">
-            This browser does not support the audio tag
-        </audio>
-    </figure>
-</div>
+
+                <audio controls src="assets/audio/Friends.mp3" id="audio">
+                    This browser does not support the audio tag
+                </audio>
+            </figure>
+        </div>
     </main>
-    <footer>Ultimate Friends Quiz 2024&copy</footer>
+    <footer></footer>
 
     <script src="assets/js/script.js"></script>
 </body>
