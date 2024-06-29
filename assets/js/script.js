@@ -1,4 +1,15 @@
-// Place questions outside of DOMContentLoaded so they can be accessed by all functions
+// //Use DomContentLoaded event instead of window.onload
+// document.addEventListener("DOMContentLoaded", function () {
+//     document.getElementById("rules").style.display = "block";
+//     const beginQuizButton = document.getElementById("rulesOk");
+//     //Help with code below from fellow student Vernell Clarke
+//     if (beginQuizButton) {
+//         beginQuizButton.addEventListener("click", function () {
+//             document.getElementById("rules").style.display = "none";
+//             startQuiz();
+//         });
+//     }
+// });
 
 //Game Questions as Objects with Booleans
 
@@ -42,7 +53,7 @@ const questions = [
         ]
     },
     {
-        question: "Will & Rosss co-founded what club in high school?",//this question is too long - change?
+        question: "Will & Ross co-founded what club in high school?",//this question is too long - change?
         answers: [
             { text: "The I Hate Rachel Green Club.", correct: true },
             { text: "The Maths Whizz Kidz Club", correct: false },
@@ -98,97 +109,126 @@ const questions = [
 
 ];
 
-//Use DomContentLoaded event instead of window.onload
-document.addEventListener("DOMContentLoaded", function () {
-    document.getElementById("rules").style.display = "block";
+//Start Quiz Function
+function startQuiz() {
+    const questionElement = document.getElementById("question");
+    const submitButton = document.getElementById("submit");
 
-    //Add event listener to click Ok Button and remove rules page
-    document.getElementById("rulesOk").addEventListener("click", function () {
-        document.getElementById("rules").style.display = "none";
-        startQuiz();
+    let currentQuestion = 0;
+    let score = 0;
+    //Help with code below from fellow student Vernell Clarke
+    let answerSelected = false;
+    const userScoreElement = document.getElementById('user-score');
 
-    });
+    if (userScoreElement) {
 
+        userScoreElement.innerText = score;
+    }
 
-    //Start Quiz Function
-    function startQuiz() {
-        const questionElement = document.getElementById("question");
-        const submitButton = document.querySelector(".nxt-btn");
+    //use shuffle array method so questions aren't missed
+    // Code from Stack Overflow
+    function shuffleArray(array) {
 
-        let currentQuestion = 0;
-        let score = 0;
-
-        //use shuffle array method so questions aren't missed 
-        function shuffleArray(array) {
-            for (let i = array.length - 1; i > 0; i--) {
-                const j = Math.floor(Math.random() * (i + 1));
-                [array[i], array[j]] = [array[j], array[i]];
-            }
+        for (let i = array.length - 1; i > 0; i--) {
+            const j = Math.floor(Math.random() * (i + 1));
+            [array[i], array[j]] = [array[j], array[i]];
         }
-
-
+    }
 
     function showQuestion() {
-        //shuffleArray(questions);
         const question = questions[currentQuestion];
         // Display question
-        questionElement.innerText = question.question;
+        if (questionElement) {
+            questionElement.innerText = question.question;
+        }
+        // Reset answerSelected for the next question
+        answerSelected = false;
 
-        // Display answers
+        // Display answers
         //  Get list of answer buttons and add event listener
         const answerButtons = document.querySelectorAll(".ans-btn");
-        //question.answers.
         answerButtons.forEach((button, index) => {
-            button.innerHTML = question.answers[index].text;
+            button.innerText = question.answers[index].text;
+            button.classList.remove('correct', 'incorrect');
+
             button.removeEventListener("click", selectAnswer);
             button.addEventListener("click", selectAnswer);
-            /*answerButtons[index].innerHTML = answer.text;
-            answerButtons[index].addEventListener("click", selectAnswer);*/
 
         });
     }
 
-
-
     //If correct answer is selected, add to score
     function selectAnswer(event) {
-        const answerText = event.target.innerText;
-        const answer = questions[currentQuestion].answers.find(a => a.text === answerText);
+        const answerButtons = document.querySelectorAll(".ans-btn");
+        // Find the correct answer object for the current question
+        const correctAnswer = questions[currentQuestion].answers.find(a => a.correct);
+         // Loop through each answer button
+        answerButtons.forEach(button => {
+            const answerText = button.innerText;
+            const answer = questions[currentQuestion].answers.find(a => a.text === answerText);
+            //Help with code below from fellow student Vernell Clarke
+            if (answer.correct) {
+                button.classList.add('correct');
 
-        if (answer.correct) {
+            } else {
+
+                button.classList.add('incorrect');
+            }
+
+            // if (event.target === button && answer.correct) {
+                if (event.target === button && answer === correctAnswer)   
             score++;
+                if (userScoreElement) {
 
+                    userScoreElement.innerText = score;
 
-        }
-        currentQuestion++;
+                }
 
-        if (currentQuestion < questions.length) {
-            // Check if question has already been asked
-            //questions.splice(currentQuestion - 1, 1);
-            showQuestion();
-        } else {
-            showResult();
-        }
+            }
+
+        );
+
+        answerSelected = true;
+    }
+
+    //Ensure user selects an answer
+    //Help with code from fellow student Vernell Clarke
+    if (submitButton) {
+        submitButton.addEventListener("click", function () {
+            if (!answerSelected && submitButton.innerText !== "Play Again?") {
+                alert("Please select an answer before proceeding.");
+                return;
+            }
+
+            if (submitButton.innerText === "Play Again?") {
+
+                resetQuiz();
+                startQuiz();
+            } else {
+                currentQuestion++;
+
+                if (currentQuestion < questions.length) {
+                    showQuestion();
+                } else {
+                    showResult();
+                }
+
+            }
+        });
     }
 
     function showResult() {
         const resultContainer = document.getElementById("results");
-        resultContainer.innerHTML = `  
+        if (resultContainer) {
+            resultContainer.innerHTML = `
       <h1>Quiz Completed!</h1>
-      <p>Your score: ${score}/${questions.length}</p>
-    `;
-        submitButton.innerHTML = "Play Again?"; //Change next button text to play again
-    }
+      <p>Your score: ${score}/${questions.length}</p>`;
+            if (submitButton) {
+                submitButton.innerHTML = "Play Again?";
 
-
-    submitButton.addEventListener("click", function () {
-        if (submitButton.innerHTML === "Play Again?") {
-            resetQuiz();
-        } else {
-            showQuestion();
+            }
         }
-    });
-
+    }
 
     //start quiz over again
     function resetQuiz() {
@@ -196,15 +236,33 @@ document.addEventListener("DOMContentLoaded", function () {
         score = 0;
         shuffleArray(questions);
         showQuestion();
-        submitButton.innerHTML = "Next Question";
+
+        if (submitButton) {
+
+            submitButton.innerHTML = "N<span class='red-dot'>&middot;</span>E<span class='aqua-dot'>&middot;</span>X<span class='gold-dot'>&middot;</span>T";
+        }
+
+        if (userScoreElement) {
+
+            userScoreElement.innerText = score;
+        }
+
+        //Shuffle questions when quiz starts
+        shuffleArray(questions);
+        //Start quiz
+        showQuestion();
+
     }
+}// DOMContentLoaded event listener
+document.addEventListener("DOMContentLoaded", function () {
+    document.getElementById("rules").style.display = "block";
+    const beginQuizButton = document.getElementById("rulesOk");
+    if (beginQuizButton) {
+        beginQuizButton.addEventListener("click", function () {
+            document.getElementById("rules").style.display = "none";
+            startQuiz();
+        });
+    }
+});
 
 
-
-    //Shuffle questions when quiz starts
-    shuffleArray(questions);
-    //Start quiz
-    showQuestion();
-} // Closing bracket for startQuiz
-
-}); //Closing brackets for DOMContentLoaded
