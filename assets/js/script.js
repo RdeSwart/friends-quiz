@@ -53,12 +53,12 @@ const questions = [
         ]
     },
     {
-        question: "Will & Ross co-founded what club in high school?",//this question is too long - change?
+        question: "Who mistakingly threw a woman's wooden leg into a fire?",
         answers: [
-            { text: "The I Hate Rachel Green Club.", correct: true },
-            { text: "The Maths Whizz Kidz Club", correct: false },
-            { text: "The Paleontology Rocks Club", correct: false },
-            { text: "The Way/No Way Club", correct: false }
+            { text: "Joey", correct: true },
+            { text: "Chandler", correct: false },
+            { text: "Ross", correct: false },
+            { text: "Richard", correct: false }
         ]
     },
     {
@@ -80,12 +80,12 @@ const questions = [
         ]
     },
     {
-        question: "What form of self-defense does Ross try to teach Rachel and Phoebe?",
+        question: "Rachel was in which sorority?",
         answers: [
-            { text: "Jiu-Jitsu", correct: false },
-            { text: "Unagi", correct: true },
-            { text: "Karate", correct: false },
-            { text: "Taekwondo", correct: false }
+            { text: "Kappa Kappa Gamma", correct: false },
+            { text: "Kappa Kappa Delta", correct: true },
+            { text: "Gamma Phi Beta", correct: false },
+            { text: "Delta Delta Delta", correct: false }
         ]
     },
     {
