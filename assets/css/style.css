@@ -19,6 +19,9 @@ body {
     width: 100vw;
     max-width: 100%;
     overflow-x: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 /*Styles for Rules Page*/
@@ -213,7 +216,7 @@ p {
     border: 2px solid #ffff00;
     font-family: 'Covered By Your Grace', sans-serif;
     font-size: .5em;
-    margin-top: 5rem;
+    margin-top: 9rem;
     position: relative;
 
 }
@@ -269,15 +272,11 @@ footer {
     line-height: 2em;
 }
 
-*/
+
 /*Media Queries*/
 
 /*For phones 398px and up*/
 @media screen and (min-width: 398px) {
-    .ans-btn {
-        width: 80%;
-    }
-
     #submit {
         left: 30%;
     }
@@ -290,11 +289,9 @@ footer {
     }
 
     .answer-buttons {
-        display: flex;
-        flex-direction: column;
-        flex-wrap: wrap;
-        align-content: center;
-        padding: 0px 70px 80px 70px;
+        padding: 0px 50px 20px 50px;
+        width: 80%;
+        
     }
 
     .question-container {
