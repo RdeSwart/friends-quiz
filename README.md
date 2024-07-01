@@ -1,5 +1,5 @@
 # F&middot;R&middot;I&middot;E&middot;N&middot;D&middot;S Quiz
-
+![Am i responsive](assets/readme-files/am-i-responsive-main.png)
 ### Welcome to the Ultimate F&middot;R&middot;I&middot;E&middot;N&middot;D&middot;S Quiz
 
 Are you a Friends fan, maybe the biggest Stan out there? Well why not prove it with the Ultimate Friends Quiz?
@@ -13,7 +13,6 @@ as they navigate through the simple, intuitive and fun layout.
 ### [User Experience(UX/UI)](#user-experience)
 
 - [User stories](#user-stories)
-- [Developer stories](#devoper-stories)
 - [Color Scheme](#color-scheme)
 - [Typography](#typography)
 - [Wireframes](#wire-frames)
@@ -26,12 +25,12 @@ as they navigate through the simple, intuitive and fun layout.
 - [Keeping Score](#keeping-score)
 - [Theme Tune](#theme-tune)
 
-### [Technologies Used](#technologies-used)
+### [Technologies Used](#technologies-used-1)
 
 - [Languages Used](#languages)
 - [Frameworks, Libraries and Programs](#frameworks-libraries-and-programs)
 
-### [Testing](#testing)
+### [Testing](#testing-1)
 
 - [Code validation](#code-validation)
 - [Accessability](#accessability)
@@ -84,22 +83,33 @@ Windows View:
 ## Features
 
 ### Overview
+![page overview](assets/readme-files/page-overview.png)
 
 I began developing my site using a mobile first approach, based on the Galaxy Fold Screen size(340px) and added media Queries for responsiveness on larger screens.
 
+### Rules Page
+![Rules page](assets/readme-files/Rules-page.png)
+
+The Rules page has a list of instructions on how to play the game. It is styled in the same manner as the main page.
+
 ### Question and Answer Box
+![question box](assets/readme-files/frame-box.png)
 
 The question and answer box is located in the Friends Photo Frame image. The answer boxes will change to purple when hovered over. You get one chance to answer.
 The questions will be shuffled each time you start the game, to give a better repeat experience.
 
 ### Next Button
+![next button](assets/readme-files/next-button.png)
 
 Using Middots again, I made the Next Button look like the Friends logo. hover and click action
 
 ### Keeping Score
+![Score board](assets/readme-files/score-board.png)
 
 The score card is located under the Next button and is big enough that the user can easily glance during game play to see the score which is tallied up
-as the game continues.
+as the game continues. 
+
+In larger screen sizes, it moves to the left of the game.
 
 ### Theme Tune
 
@@ -123,18 +133,16 @@ I would also like to add a category quiz on the characters and actors who play t
 
 ### Frameworks, Libraries and Programs
 
-### Google Fonts
+#### Google Fonts
 I imported Google fonts and placed it in the style tag in the HTML file.
-
-### Favicon
+#### Favicon
 For my Favicon, I used The Noun Project, and changed the colour to purple for theme fluidity.
-
-### Gitpod
+#### Gitpod
 I used Gitpod to write the code, commit messages and push to Github.
-
-### Github
+#### Github
 I used Github to store my project and to deploy it.
-
+#### Am I Responsive
+I used the Am I responsive website to give a screenshot of how my site looks on various screen sizes. [See here](#friends-quiz)
 
 ## Testing
 
@@ -151,8 +159,6 @@ I used W3C Markup to validate the HTML file, which returned no errors.
 ![HTML Validation](assets/readme-files/HTML-validation.png) 
 
 I used JSHint to validate the javascript code, which resulted in no errors
-[insert screenshot here******]
-
 ### Accessibility
 
 To check the sites accessibility, I used Lighthouse in Dev Tools
@@ -163,6 +169,14 @@ Rules Page:
 Main Page:
 ![Lighthouse Main Page](assets/readme-files/lighthouse-main-page.png)
 
+### Browser Testing
+To make the site responsive on all devices, I used Media queries. I started the development of the code on large screen devices which I quickly realised was wrong and changed to developing it with a "mobile first" approach, specifically The Galaxy Fold, whose screen size is 344 x 882px.
+
+I had some issues with the length of the questions rendering properly as I used an image for the question container. To remedy this, I played back and forth with padding in dev tools and in two instances, I just had to re-write the question to make it shorter.
+
+#### Unsolved Bugs:
+There is an issue with horizontal scrolling on some screens, I think it is an issue with either the image or the .question-container, but I didn't have enough time to fix it, and it doesn't take away from any functionality.
+
 ### Testing Table
 
 | Feature:               | Expected outcome:                                                 | Pass/Fail: |
@@ -172,16 +186,18 @@ Main Page:
 | Begin Quiz Button      | Moves onto main landing page                                      | Pass       |
 | Quiz Page              | 1st question renders                                              | Pass       |
 | Quiz Page              | 4 possible answers to 1st q renders                               | Pass       |
-| Shuffle Questions      | Each new round should have a questions asked in a different order | Pass       |
+| Shuffle Questions      | Each new round should have questions asked in a different order | Pass       |
 | Answer Buttons Hovered | Change to color purple when hovered over                          | Pass       |
 | Answer Button clicked  | Only allowed to click one answer                                  | Pass       |
-| Next Button clicked    | Question ans answer options change                                | Pass       |
+| Wrong Answer           | Button turns red when wrong ans selected                          | Pass       |
+| Correct Answer         | Button turns green to show correct answer                         | Pass       |
+| Next Button clicked    | Question and answer options change                                | Pass       |
 | Score Board            | Correct answers are tallied up and shown on score board           | Pass       |
 | Media Player mute      | Media player is muted until user interaction with controls        | Pass       |
 | Media Player play      | Theme tune plays at user set volume                               | Pass       |
-| End Game popup         | User score out of 10 alert box                                    | Pass       |
+| End Game popup         | Quiz Completed message                                            | Pass       |
 | Next Game              | when questions reach 10, restart game                             | Pass       |
-
+| Play Again             | Next Button changes to Play Again when game complete              | Pass       |
 ## Deployment
 I used Gitpod to develop the code and then pushed to Github.
 
@@ -195,3 +211,25 @@ Here are the following steps I used to deploy the website from Github repository
 
 The live link can be found here:
 [Friends Quiz](https://rdeswart.github.io/friends-quiz/)
+## Credits
+### Content
+The Questions for the game were taken from [Parade](https://parade.com/1061827/alexandra-hurtado/friends-trivia-questions/)
+
+Array Random method code from [Stack Overflow](https://stackoverflow.com/questions/2450954/how-to-randomize-shuffle-a-javascript-array)
+
+I want to give a huge thank you to my fellow student [Vernell Clarke](https://github.com/VCGithubCode), without whom I would not have been able to finish my project. He took many hours out of his time, to go through and tutor me on my code. His patience and knowledge have been invaluable to me during what I found to be quite a stressful and often times frustrating project. His positive "can-do" attitude is what got me over the line. And all the little tips and shortcuts were invaluable!
+
+Chat Gtp to explain reasoning and help with bracket closure placements.
+
+Inspiration for the start of the code from YouTube video [Great Stack](https://www.youtube.com/watch?v=PBcqGxrr9g8&t=1393s)
+
+Event listeners tutorials from [MDN Web Docs](https://developer.mozilla.org/en-US/docs/Web/API/EventTarget/addEventListener)
+
+Font from [Google Fonts](https://fonts.google.com/)
+
+Favicon from [The Noun Project](https://thenounproject.com/)
+
+### Media
+Theme tune for Friends at [Archive.org](https://archive.org/details/tvtunes_31736)
+
+The image frame for the main page was taken from [Comedy Shop](https://comedyshop.com/products/new-world-sales-friends-frame-magnet-mcm-005) and background removed in [Canva](https://www.canva.com/)
