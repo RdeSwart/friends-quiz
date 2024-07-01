@@ -160,16 +160,11 @@ function startQuiz() {
     }
 
     //If correct answer is selected, add to score
+    //Help with code below from fellow student Vernell Clarke
     function selectAnswer(event) {
         const answerButtons = document.querySelectorAll(".ans-btn");
         // Find the correct answer object for the current question
         const selectedButton = event.target;
-        // Loop through each answer button
-        const correctAnswer = questions[currentQuestion].answers.find(
-
-            (a) => a.correct
-
-        );
 
         answerButtons.forEach((button) => {
 
@@ -181,7 +176,6 @@ function startQuiz() {
                 (a) => a.text === answerText
 
             );
-            //Help with code below from fellow student Vernell Clarke
             if (answer.correct) {
                 button.classList.add('correct');
 
