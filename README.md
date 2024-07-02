@@ -143,6 +143,8 @@ I used Gitpod to write the code, commit messages and push to Github.
 I used Github to store my project and to deploy it.
 #### Am I Responsive
 I used the Am I responsive website to give a screenshot of how my site looks on various screen sizes. [See here](#friends-quiz)
+#### Balsamiq
+I used Balsamiq to create the wireframe for my project.
 
 ## Testing
 
@@ -213,6 +215,8 @@ The live link can be found here:
 [Friends Quiz](https://rdeswart.github.io/friends-quiz/)
 ## Credits
 ### Content
+The wireframe was created using [Balsamiq](https://balsamiq.com/)
+
 The Questions for the game were taken from [Parade](https://parade.com/1061827/alexandra-hurtado/friends-trivia-questions/)
 
 Array Random method code from [Stack Overflow](https://stackoverflow.com/questions/2450954/how-to-randomize-shuffle-a-javascript-array)
@@ -233,3 +237,7 @@ Favicon from [The Noun Project](https://thenounproject.com/)
 Theme tune for Friends at [Archive.org](https://archive.org/details/tvtunes_31736)
 
 The image frame for the main page was taken from [Comedy Shop](https://comedyshop.com/products/new-world-sales-friends-frame-magnet-mcm-005) and background removed in [Canva](https://www.canva.com/)
+
+I changed the cursor to a cup of coffee emoji. The code for this was acquired at [Emoji Cursor App](https://www.emojicursor.app/)
+
+I got the coffee cup emoji from [Emoji DB](https://emojidb.org/friends-tv-show-emojis)
