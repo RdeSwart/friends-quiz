@@ -53,6 +53,7 @@ ol {
     margin: 0 auto;
 
 }
+
 /* Begin Quiz Button on Instruction page*/
 #rulesOk {
     width: 150px;
@@ -64,7 +65,8 @@ ol {
     font-family: 'Covered By Your Grace', sans-serif;
     font-size: .75em;
     margin: 20px auto;
-    cursor:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='36' height='43' viewport='0 0 100 100' style='fill:black;font-size:22px;'><text y='50%'>☕</text></svg>") 16 0,auto; /*!emojicursor.app*/
+    cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='36' height='43' viewport='0 0 100 100' style='fill:black;font-size:22px;'><text y='50%'>☕</text></svg>") 16 0, auto;
+    /*!emojicursor.app*/
 }
 
 
@@ -182,7 +184,8 @@ p {
     font-family: 'Covered By Your Grace', sans-serif;
     font-size: .5em;
     /* Cursor style emoji fromEmoji Cursor app*/
-    cursor:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='36' height='43' viewport='0 0 100 100' style='fill:black;font-size:22px;'><text y='50%'>☕</text></svg>") 16 0,auto; /*!emojicursor.app*/
+    cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='36' height='43' viewport='0 0 100 100' style='fill:black;font-size:22px;'><text y='50%'>☕</text></svg>") 16 0, auto;
+    /*!emojicursor.app*/
 }
 
 .ans-btn:hover {
@@ -212,7 +215,8 @@ p {
     font-size: .5em;
     margin-top: 7rem;
     position: relative;
-    cursor:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='36' height='43' viewport='0 0 100 100' style='fill:black;font-size:22px;'><text y='50%'>☕</text></svg>") 16 0,auto; /*!emojicursor.app*/
+    cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='36' height='43' viewport='0 0 100 100' style='fill:black;font-size:22px;'><text y='50%'>☕</text></svg>") 16 0, auto;
+    /*!emojicursor.app*/
 
 }
 
@@ -466,18 +470,20 @@ footer {
     }
 
     #question-frame {
-        width: 37%;
-        margin-top: 25px;
+        width: 50%;
+        /* margin-top: 25px; */
+        margin-right: 33%
     }
 
     .quest-box h3 {
         font-size: 30px;
         width: 250px;
-        margin-top: 0px;
+        margin: 200px 350px 0 100px;
     }
 
     .answer-buttons {
-        width: 30%;
+        width: 40%;
+        margin-right: 250px;
     }
 
     .ans-btn {
@@ -488,20 +494,15 @@ footer {
     #submit {
         margin-top: 6rem;
         width: 20%;
-        left: 50%;
+        left: 40%;
     }
 
     #results {
         font-size: 45px;
-        width: 20%;
         height: 50px;
-        margin: 0;
+        margin: 25px 0 0 150px;
         display: flex;
         flex-direction: column;
-        flex-wrap: wrap;
-        align-content: space-between;
-        position: absolute;
-        bottom: 120px;
     }
 
     #numScore {
@@ -514,7 +515,7 @@ footer {
     #results h1 {
         font-size: 80px;
         position: absolute;
-        left: 320px;
+        left: 20%;
         width: 500px;
     }
 
