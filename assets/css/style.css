@@ -53,7 +53,7 @@ ol {
     margin: 0 auto;
 
 }
-
+/* Begin Quiz Button on Instruction page*/
 #rulesOk {
     width: 150px;
     padding: 8px;
@@ -64,6 +64,7 @@ ol {
     font-family: 'Covered By Your Grace', sans-serif;
     font-size: .75em;
     margin: 20px auto;
+    cursor:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='36' height='43' viewport='0 0 100 100' style='fill:black;font-size:22px;'><text y='50%'>☕</text></svg>") 16 0,auto; /*!emojicursor.app*/
 }
 
 
@@ -180,6 +181,8 @@ p {
     margin: 2px;
     font-family: 'Covered By Your Grace', sans-serif;
     font-size: .5em;
+    /* Cursor style emoji fromEmoji Cursor app*/
+    cursor:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='36' height='43' viewport='0 0 100 100' style='fill:black;font-size:22px;'><text y='50%'>☕</text></svg>") 16 0,auto; /*!emojicursor.app*/
 }
 
 .ans-btn:hover {
@@ -209,6 +212,7 @@ p {
     font-size: .5em;
     margin-top: 7rem;
     position: relative;
+    cursor:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='36' height='43' viewport='0 0 100 100' style='fill:black;font-size:22px;'><text y='50%'>☕</text></svg>") 16 0,auto; /*!emojicursor.app*/
 
 }
 
