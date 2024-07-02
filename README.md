@@ -20,10 +20,14 @@ as they navigate through the simple, intuitive and fun layout.
 ### [Features](#features)
 
 - [Overview](#overview)
+- [Rules Page](#rules-page)
 - [Question and Answer Box](#question-and-answer-box)
+- [Cursor Emoji](#cursor-emoji)
+- [Error Message](#error-message)
 - [Next button](#next-button)
 - [Keeping Score](#keeping-score)
 - [Theme Tune](#theme-tune)
+- [Future Features](#future-features)
 
 ### [Technologies Used](#technologies-used-1)
 
@@ -72,7 +76,7 @@ I used Google fonts, Covered By Your Grace", which I found to be the closest to 
 
 ### Wire frames
 
-As per The five planes, I used Balsamique Wireframes to conceptualize my vision for the quiz. I made the main quiz on mobile and desktops to see how it would look.
+As per The five planes, I used Balsamiq Wireframes to conceptualize my vision for the quiz. I made the main quiz on mobile and desktops to see how it would look.
 
 Mobile View:
 ![Mobile View](assets/readme-files/friends-quiz-mobile.png)
@@ -101,7 +105,7 @@ The questions will be shuffled each time you start the game, to give a better re
 ### Cursor Emoji
 ![Coffee Cup Emoji](assets/readme-files/coffee-cuo-cursor.png)
 
-For the cursor on larger screens, I changed to have a coffee cup emoji for some added fun and interest.
+For the cursor on larger screens, I changed to have a coffee cup emoji for some added fun and interest.  I used the Steps Recorder App to screenshot the cursor.
 
 ### Error Message
 ![Error Message](assets/readme-files/error-message.png)
@@ -111,15 +115,14 @@ Should the user click the Next button instead of answering, an error popup messa
 ### Next Button
 ![next button](assets/readme-files/next-button.png)
 
-Using Middots again, I made the Next Button look like the Friends logo. hover and click action
-
+Using Middots again, I made the Next Button look like the Friends logo.
 ### Keeping Score
 ![Score board](assets/readme-files/score-board.png)
 
 The score card is located under the Next button and is big enough that the user can easily glance during game play to see the score which is tallied up
 as the game continues. 
 
-In larger screen sizes, it moves to the left of the game.
+In larger screen sizes, it moves to the left of the game to reduce redundant space and so the user can see it as they play.
 
 ### Theme Tune
 
@@ -201,6 +204,7 @@ There is an issue with horizontal scrolling on some screens, I think it is an is
 | Shuffle Questions      | Each new round should have questions asked in a different order | Pass       |
 | Answer Buttons Hovered | Change to color purple when hovered over                          | Pass       |
 | Answer Button clicked  | Only allowed to click one answer                                  | Pass       |
+| Emoji cursor on large screens | Appear when hover over answer & Next Button| Pass|
 | Wrong Answer           | Button turns red when wrong ans selected                          | Pass       |
 | Correct Answer         | Button turns green to show correct answer                         | Pass       |
 | Next Button clicked    | Question and answer options change                                | Pass       |
@@ -229,9 +233,9 @@ The wireframe was created using [Balsamiq](https://balsamiq.com/)
 
 The Questions for the game were taken from [Parade](https://parade.com/1061827/alexandra-hurtado/friends-trivia-questions/)
 
-Array Random method code from [Stack Overflow](https://stackoverflow.com/questions/2450954/how-to-randomize-shuffle-a-javascript-array)
+Array Random(Fisher-Yates) method code from [Stack Overflow](https://stackoverflow.com/questions/2450954/how-to-randomize-shuffle-a-javascript-array). I used this instead of the splice method, which I did originally but it was only giving me 5 questions randomly then stopping.
 
-I want to give a huge thank you to my fellow student [Vernell Clarke](https://github.com/VCGithubCode), without whom I would not have been able to finish my project. He took many hours out of his time, to go through and tutor me on my code. His patience and knowledge have been invaluable to me during what I found to be quite a stressful and often times frustrating project. His positive "can-do" attitude is what got me over the line. And all the little tips and shortcuts were invaluable!
+I want to give a huge thank you to my fellow student [Vernell Clarke](https://github.com/VCGithubCode), without whom I would not have been able to finish my project. He took many hours out of his time, to go through and tutor me on my code. His patience and knowledge have been invaluable to me during what I found to be quite a stressful and often times frustrating project. His positive "can-do" attitude is what got me over the line. And all the little tips and shortcuts were so helpful to learn!
 
 Chat Gtp to explain reasoning and help with bracket closure placements.
 
@@ -248,6 +252,8 @@ Theme tune for Friends at [Archive.org](https://archive.org/details/tvtunes_3173
 
 The image frame for the main page was taken from [Comedy Shop](https://comedyshop.com/products/new-world-sales-friends-frame-magnet-mcm-005) and background removed in [Canva](https://www.canva.com/)
 
-I changed the cursor to a cup of coffee emoji. The code for this was acquired at [Emoji Cursor App](https://www.emojicursor.app/)
+I changed the cursor to a cup of coffee emoji for larger screen players. The code for this was acquired at [Emoji Cursor App](https://www.emojicursor.app/)
 
 I got the coffee cup emoji from [Emoji DB](https://emojidb.org/friends-tv-show-emojis)
+
+[Back to Top](#welcome-to-the-ultimate-friends-quiz)
