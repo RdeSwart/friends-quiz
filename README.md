@@ -98,6 +98,16 @@ The Rules page has a list of instructions on how to play the game. It is styled 
 The question and answer box is located in the Friends Photo Frame image. The answer boxes will change to purple when hovered over. You get one chance to answer.
 The questions will be shuffled each time you start the game, to give a better repeat experience.
 
+### Cursor Emoji
+![Coffee Cup Emoji](assets/readme-files/coffee-cuo-cursor.png)
+
+For the cursor on larger screens, I changed to have a coffee cup emoji for some added fun and interest.
+
+### Error Message
+![Error Message](assets/readme-files/error-message.png)
+
+Should the user click the Next button instead of answering, an error popup message will appear to explain they need to choose an answer before proceeding.
+
 ### Next Button
 ![next button](assets/readme-files/next-button.png)
 
