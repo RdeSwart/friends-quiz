@@ -192,6 +192,8 @@ I had some issues with the length of the questions rendering properly as I used 
 #### Unsolved Bugs:
 There is an issue with horizontal scrolling on some screens, I think it is an issue with either the image or the .question-container, but I didn't have enough time to fix it, and it doesn't take away from any functionality.
 
+Media Queries need responsive styling for larger screens. There is a bug in the container somewhere and I just need time to find it.
+
 ### Testing Table
 
 | Feature:               | Expected outcome:                                                 | Pass/Fail: |
@@ -235,7 +237,7 @@ The Questions for the game were taken from [Parade](https://parade.com/1061827/a
 
 Array Random(Fisher-Yates) method code from [Stack Overflow](https://stackoverflow.com/questions/2450954/how-to-randomize-shuffle-a-javascript-array). I used this instead of the splice method, which I did originally but it was only giving me 5 questions randomly then stopping.
 
-I want to give a huge thank you to my fellow student [Vernell Clarke](https://github.com/VCGithubCode), without whom I would not have been able to finish my project. He took many hours out of his time, to go through and tutor me on my code. His patience and knowledge have been invaluable to me during what I found to be quite a stressful and often times frustrating project. His positive "can-do" attitude is what got me over the line. And all the little tips and shortcuts were so helpful to learn!
+I want to give a huge thank you to my fellow student [Vernell Clark](https://github.com/VCGithubCode), without whom I would not have been able to finish my project. He took many hours out of his time, to go through and tutor me on my code. His patience and knowledge have been invaluable to me during what I found to be quite a stressful and often times frustrating project. His positive "can-do" attitude is what got me over the line. And all the little tips and shortcuts were so helpful to learn!
 
 Chat Gtp to explain reasoning and help with bracket closure placements.
 
