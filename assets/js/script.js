@@ -114,8 +114,8 @@ function startQuiz() {
     const questionElement = document.getElementById("question");
     const submitButton = document.getElementById("submit");
     const userScoreElement = document.getElementById("user-score");
-
     const resultContainer = document.getElementById("results");
+
     let currentQuestion = 0;
     let score = 0;
     //Help with code below from fellow student Vernell Clarke
@@ -152,7 +152,6 @@ function startQuiz() {
         answerButtons.forEach((button, index) => {
             button.innerText = question.answers[index].text;
             button.classList.remove('correct', 'incorrect');
-
             button.removeEventListener("click", selectAnswer);
             button.addEventListener("click", selectAnswer);
 
@@ -172,9 +171,7 @@ function startQuiz() {
 
             const answerText = button.innerText;
             const answer = questions[currentQuestion].answers.find(
-
                 (a) => a.text === answerText
-
             );
             if (answer.correct) {
                 button.classList.add('correct');
@@ -187,9 +184,7 @@ function startQuiz() {
             if (selectedButton === button && answer.correct) {
                 score++;
                 if (userScoreElement) {
-
                     userScoreElement.innerText = score;
-
                 }
 
             }
@@ -212,7 +207,6 @@ function startQuiz() {
             if (submitButton.innerText === "Play Again?") {
 
                 resetQuiz();
-
             } else {
                 currentQuestion++;
 
@@ -221,7 +215,6 @@ function startQuiz() {
                 } else {
                     showResult();
                 }
-
             }
         });
     }
@@ -234,7 +227,6 @@ function startQuiz() {
       <p>Your score: ${score}/${questions.length}</p>`;
             if (submitButton) {
                 submitButton.innerHTML = "Play Again?";
-
             }
         }
     }
@@ -248,12 +240,9 @@ function startQuiz() {
         showQuestion();
 
         if (submitButton) {
-
             submitButton.innerHTML = "N<span class='red-dot'>&middot;</span>E<span class='aqua-dot'>&middot;</span>X<span class='gold-dot'>&middot;</span>T";
         }
-
         if (userScoreElement) {
-
             userScoreElement.innerText = score;
         }
     }
