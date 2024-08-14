@@ -204,6 +204,11 @@ p {
     left: 30%;
 }
 
+/* Styling for error message */
+#error {
+    background-color: #000000;
+}
+
 #submit {
     width: 9rem;
     height: 2em;
