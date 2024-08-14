@@ -2,6 +2,8 @@
 ![Am i responsive](assets/readme-files/am-i-responsive-main.png)
 ### Welcome to the Ultimate F&middot;R&middot;I&middot;E&middot;N&middot;D&middot;S Quiz
 
+[Friends Quiz Live Site](https://rdeswart.github.io/friends-quiz/)
+
 Are you a Friends fan, maybe the biggest Stan out there? Well why not prove it with the Ultimate Friends Quiz?
 The Ultimate Friends Quiz has questions from all of the series that will challenge even the most die hard fan! Will you be the Best of Friends or will you just be a mere acquaintance?
 
