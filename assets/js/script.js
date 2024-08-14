@@ -199,7 +199,7 @@ function startQuiz() {
     //Help with code from fellow student Vernell Clarke
     if (submitButton) {
         submitButton.addEventListener("click", function () {
-            var error = document.getElementById(error)
+            var error = document.getElementById("error")
             if (!answerSelected && submitButton.innerText !== "Play Again?") {
                 //alert("Please select an answer before proceeding.");
                 error.innerHTML = "<span style='color: red;'>" +
