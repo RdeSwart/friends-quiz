@@ -200,7 +200,9 @@ function startQuiz() {
     if (submitButton) {
         submitButton.addEventListener("click", function () {
             if (!answerSelected && submitButton.innerText !== "Play Again?") {
-                alert("Please select an answer before proceeding.");
+                //alert("Please select an answer before proceeding.");
+                error.innerHTML = "<span style='color: red;'>" +
+                    "Please choose an answer"
                 return;
             }
 
