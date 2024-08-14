@@ -57,15 +57,10 @@ ol {
 #quizBegin p {
 
     font-size: 0.55em;
-
     margin: 0.5rem auto;
-
     justify-content: center;
-
     border: none;
-
     background: #ffd700c7;
-
     width: 80%;
 
 }
@@ -148,6 +143,7 @@ p {
 
 /* Styling for the frame question box */
 .quest-box h3 {
+    position:absolute;
     top: 13em;
     left: 5em;
     font-size: 21px;
