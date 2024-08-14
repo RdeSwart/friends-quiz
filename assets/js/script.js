@@ -199,16 +199,14 @@ function startQuiz() {
     //Help with code from fellow student Vernell Clarke
     if (submitButton) {
         submitButton.addEventListener("click", function () {
-            var error = document.getElementById("error")
+            var error = document.getElementById("error");
             if (!answerSelected && submitButton.innerText !== "Play Again?") {
-                //alert("Please select an answer before proceeding.");
                 error.innerHTML = "<span style='color: red;'>" +
-                    "Please choose an answer"
+                    " Please choose an answer! ";
                 return;
             } else {
                 error = document.getElementById("error");
                 error.style.display= "none";
-                return;
             }
 
             if (submitButton.innerText === "Play Again?") {
