@@ -205,6 +205,9 @@ function startQuiz() {
                 error.innerHTML = "<span style='color: red;'>" +
                     "Please choose an answer"
                 return;
+            } else {
+                error = document.getElementById("error");
+                error.style.display= "none";
             }
 
             if (submitButton.innerText === "Play Again?") {
