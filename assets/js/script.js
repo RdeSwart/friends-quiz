@@ -208,6 +208,7 @@ function startQuiz() {
             } else {
                 error = document.getElementById("error");
                 error.style.display= "none";
+                return;
             }
 
             if (submitButton.innerText === "Play Again?") {

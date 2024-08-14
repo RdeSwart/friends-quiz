@@ -206,9 +206,10 @@ p {
 
 /* Styling for error message */
 #error {
-    background-color: #000000;
+    background-color: #000000cf;
     position: absolute;
     margin-top: 310px;
+    font-size: .75em;
 }
 
 #submit {
@@ -281,6 +282,10 @@ footer {
     .next-btn {
         top: 18em;
         left: 33%;
+    }
+
+    #error {
+        margin-top: 340px;
     }
 
     #results {
