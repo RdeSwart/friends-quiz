@@ -283,182 +283,173 @@ footer {
     #results {
         margin: 0 auto;
 }
+}
 
-@media screen and (min-width: 293px) {
+/* For screen sizes 575px and up*/
+@media screen and (min-width: 575px) {
     .quest-box h3 {
-        top: 19.2rem;
+        left: 38%;
+        top: 11em;
     }
 
     .next-btn {
-        top: 614px;
-        left: 29%;
+        top: 17em;
+        left: 38%;
     }
 }
 
-@media screen and (min-width: 300px) {
-    .quest-box h3 {
-        top: 274px;
-        left: 64px;
-    }
-}
+/* For screens 768px and up */
+@media screen and (min-width: 768px) {
 
-@media screen and (min-width: 330px) {
-    .next-btn {
-        top: 630px;
-        left: 33%;
+    /*  Rules page */
+    .instructions {
+        font-size: 3rem;
     }
 
-    .quest-box h3 {
-        top: 276px;
-        left: 71px;
+    ol {
+        font-size: 1em;
     }
-}
 
-@media screen and (min-width: 400px) {
-    .quest-box h3 {
-        top: 276px;
-        left: 84px;
+    #quizBegin p {
+        font-size: 1em;
     }
-}
 
-/*For larger phones and landscape mode (540px and up)*/
-
-@media screen and (min-width: 540px) {
-
-    p {
-        margin-left: 60px;
-        font-size: 32px;
+    /* Main Page */
+    h1 {
+        font-size: 1.5em;
+        padding-top: 15px;
     }
 
     h2 {
-        margin-left: 60px;
-        font-size: 38px;
-    }
-
-    #question-frame {
-        width: 90%;
-    }
-
-    #submit {
-        left: 50%;
-        font-size: 35px;
-    }
-
-    .ans-btn {
-        width: 80%;
-        font-size: 25px;
-    }
-
-
-    #quiz-begin p {
-        font-size: 35px;
-    }
-
-    .answer-buttons {
-        padding-bottom: 100px;
-        display: flex;
-        flex-wrap: nowrap;
-        bottom: 252px;
-        left: 32px;
-        width: 59%;
-    }
-    .next-btn {
-        top: 686px;
-        left: 38%;
-    }
-
-.quest-box h3 {
-    top: 335px;
-    left: 108px;
-    font-size: 1.5rem;
-}
-
-#results {
-    font-size: 35px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    margin: 0 auto;
-    width: 100%;
-}
-
-#numScore {
-    font-size: 30px;
-}
-
-figcaption {
-    font-size: 35px;
-}
-
-audio {
-    height: 25px;
-    width: 100%;
-    margin: 5px auto;
-    width: 100%;
-}
-
-}
-
-
-
-/*For tablets and larger screens(768px and up)*/
-/* @media screen and (min-width: 768px) {
-
-    /* Rules Page*/
-    ol {
-        font-size: 35px;
-    }
-
-    #rules h1 {
-        width: 90%;
-    }
-
-    /*Main page*/
-    h3 {
-        font-size: 35px;
+        font-size: 1em;
     }
 
     p {
-        font-size: 40px;
+        width: 80%;
+        font-size: 1em;
     }
 
     #question-frame {
-        width: 80%;
-    }
-
-    .question-container {
-        margin: 2% 0 0 15%;
-        width: 100%;
+        width: 50%;
+        height: 14em;
     }
 
     .quest-box h3 {
-        font-weight: 200;
-        font-size: 38px;
-        width: 300px;
-    }
-
-    .ans-btn {
-        width: 100%;
-        font-size: 30px;
+        left: 39%;
+        top: 13em;
+        font-size: 25px;
+        width: 180px;
     }
 
     .answer-buttons {
-        margin: 0 110px 0 0;
-        width: 60%;
+        width: 35%;
+        bottom: 243px
     }
 
-    #submit {
-        margin-top: 9rem;
-        left: 33%;
-        width: 50%;
+    .ans-btn {
+        font-size: 21px;
+    }
+
+    .next-btn {
+        top: 22em;
+        left: 40%;
     }
 
     #results {
-        margin-left: 25%;
-        width: 65%;
+        margin: 113px auto;
     }
 
-    #results h1 {
-        width: 75%
-    } 
+    #numScore {
+        font-size: 1.5em;
+    }
 
+    .js-score {
+        font-size: 1.5em;
+    }
+
+    figcaption {
+        font-size: 2.2rem;
+    }
+
+    audio {
+        height: 85px;
+    }
+
+    footer {
+        font-size: 29px;
+    }
+}
+
+/* For desktop screens 1024px and up */
+
+@media screen and (min-width: 1024px) {
+
+    /*  Rules page */
+    .instructions {
+        font-size: 4rem;
+        padding: 15px;
+    }
+
+    ol {
+        font-size: 1.3em;
+        padding-left: 3rem;
+    }
+
+    #quizBegin p {
+        font-size: 1.5em;
+    }
+
+    #rulesOk {
+        width: 250px;
+        height: 80px;
+    }
+
+    /* Main Page */
+    .quest-box h3 {
+        left: 42%;
+        top: 11em;
+        font-size: 32px;
+    }
+
+    .answer-buttons {
+        bottom: 270px;
+    }
+
+    .next-btn {
+        top: 26em;
+        left: 43%;
+    }
+
+    #results {
+        margin: 220px auto;
+    }
+}
+
+/* For extra large screens and Tvs */
+
+@media screen and (min-width: 1201px) {
+    #question-frame {
+        width: 46%;
+        height: 683px;
+    }
+
+    .quest-box h3 {
+        top: 8em;
+        font-size: 40px;
+        width: 219px;
+    }
+
+    .answer-buttons {
+        width: 32%;
+        bottom: 287px;
+    }
+
+    .next-btn {
+        top: 25em;
+        left: 44%;
+    }
+
+    #results {
+        margin: 266px auto 0;
+    }
+}
