@@ -208,7 +208,7 @@ function startQuiz() {
             } else {
                 //error = document.getElementById("error");
                 error.style.display= "none";
-            }
+            
 
             if (submitButton.innerText === "Play Again?") {
 
@@ -222,8 +222,9 @@ function startQuiz() {
                     showResult();
                 }
             }
-        });
-    }
+        }
+    });
+}
 
     function showResult() {
         const resultContainer = document.getElementById("results");
