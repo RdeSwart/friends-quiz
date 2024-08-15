@@ -185,6 +185,7 @@ p {
 
 .ans-btn:hover {
     background-color: #c38df5;
+    box-shadow: 0px 0px 12px 4px rgba(0,0,0,0.74);
 }
 
 .correct {
