@@ -207,8 +207,8 @@ function startQuiz() {
             } else {
                 error = document.getElementById("error");
                 error.style.display= "none";
-                return;
             }
+            return;
 
             if (submitButton.innerText === "Play Again?") {
 
