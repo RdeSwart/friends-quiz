@@ -177,7 +177,7 @@ p {
     transition: all 0.2s;
     margin: 2px;
     font-family: 'Covered By Your Grace', sans-serif;
-    font-size: 18PX;
+    font-size: 18px;
     /* Cursor style emoji fromEmoji Cursor app*/
     cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='36' height='43' viewport='0 0 100 100' style='fill:black;font-size:22px;'><text y='50%'>☕</text></svg>") 16 0, auto;
     /*!emojicursor.app*/
@@ -202,6 +202,10 @@ p {
     display: flex;
     margin: 0 auto;
     left: 30%;
+}
+
+.next-btn:hover {
+    box-shadow: 0px 0px 12px 4px rgba(0,0,0,0.74);
 }
 
 /* Styling for error message */
