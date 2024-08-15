@@ -117,7 +117,7 @@ For the cursor on larger screens, I changed to have a coffee cup emoji for some 
 ### Error Message
 ![Error Message](assets/readme-files/error-message.png)
 
-Should the user click the Next button instead of answering, an error popup message will appear to explain they need to choose an answer before proceeding.
+Should the user click the Next button instead of answering, an error popup message will appear to explain they need to choose an answer before proceeding.  It will disappear once the question has been answered and the Next button has been clicked.
 
 ### Next Button
 ![next button](assets/readme-files/next-button.png)
