@@ -86,9 +86,11 @@ I used Google fonts, Covered By Your Grace", which I found to be the closest to 
 As per The five planes, I used Balsamiq Wireframes to conceptualize my vision for the quiz. I made the main quiz on mobile and desktops to see how it would look.
 
 Mobile View:
+
 ![Mobile View](assets/readme-files/friends-quiz-mobile.png)
 
 Windows View:
+
 ![Windows view](assets/readme-files/friends-quiz-windows.png)
 
 ## Features
@@ -199,7 +201,6 @@ I had some issues with the length of the questions rendering properly as I used 
 #### Unsolved Bugs:
 There is an issue with horizontal scrolling on some screens, I think it is an issue with either the image or the .question-container, but I didn't have enough time to fix it, and it doesn't take away from any functionality.
 
-Media Queries need responsive styling for larger screens. There is a bug in the container somewhere and I just need time to find it.
 
 ### Testing Table
 
