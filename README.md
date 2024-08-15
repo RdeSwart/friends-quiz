@@ -106,7 +106,7 @@ The Rules page has a list of instructions on how to play the game. It is styled 
 ### Question and Answer Box
 ![question box](assets/readme-files/frame-box.png)
 
-The question and answer box is located in the Friends Photo Frame image. The answer boxes will change to purple when hovered over. You get one chance to answer.
+The question and answer box is located in the Friends Photo Frame image. The answer buttons will change to purple and have a box shadow effect when hovered over. You get one chance to answer.
 The questions will be shuffled each time you start the game, to give a better repeat experience.
 
 ### Cursor Emoji
@@ -122,7 +122,7 @@ Should the user click the Next button instead of answering, an error popup messa
 ### Next Button
 ![next button](assets/readme-files/next-button.png)
 
-Using Middots again, I made the Next Button look like the Friends logo.
+Using Middots again, I made the Next Button look like the Friends logo.  I also added box styling to give some animation when it is hovered over.
 ### Keeping Score
 ![Score board](assets/readme-files/score-board.png)
 
