@@ -201,11 +201,13 @@ function startQuiz() {
         submitButton.addEventListener("click", function () {
             var error = document.getElementById("error");
             
+            //Display error message if no answer is selected
             if (!answerSelected && submitButton.innerText !== "Play Again?") {
                 error.innerHTML = "<span style='color: red;'>" +
-                    " Please choose an answer to proceed! ";
+                    " Please choose an answer to proceed ! ";
+                error.style.display = "block";
                 return;
-                // return;
+            
             } else {
                 //error = document.getElementById("error");
                 error.style.display= "none";
@@ -216,6 +218,7 @@ function startQuiz() {
                 resetQuiz();
                 return;
             } else {
+                //Move to next question
                 currentQuestion++;
 
                 // Reset when moving to the next question
