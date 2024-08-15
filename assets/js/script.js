@@ -204,6 +204,7 @@ function startQuiz() {
             if (!answerSelected && submitButton.innerText !== "Play Again?") {
                 error.innerHTML = "<span style='color: red;'>" +
                     " Please choose an answer to proceed! ";
+                return;
                 // return;
             } else {
                 //error = document.getElementById("error");
@@ -213,8 +214,12 @@ function startQuiz() {
             if (submitButton.innerText === "Play Again?") {
 
                 resetQuiz();
+                return;
             } else {
                 currentQuestion++;
+
+                // Reset when moving to the next question
+                answerSelected = false;
 
                 if (currentQuestion < questions.length) {
                     showQuestion();
