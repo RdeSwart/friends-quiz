@@ -42,6 +42,11 @@ as they navigate through the simple, intuitive and fun layout.
 - [Accessability](#accessability)
 - [Testing Table](#testing-table)
 
+### [Deployment](#deployment-1)
+
+- [Cloning](#cloning-the-repository)
+- [Forking](#forking-the-repository)
+
 ## User Experience
 
 The quiz is of a simple but fully responsive design, using JavaScript to create a dynamic and interactive experience for the user. The question box has a multichoice answer section, that will only allow one attempt at the correct answer. If the correct answer is selected, it will change to purple, if incorrect, it will change to red. The user
@@ -66,7 +71,7 @@ At the end of the quiz, the Next button will change to Play Again and the quiz w
 
 ### Color Scheme
 
-I decided to use the main color scheme in Monica's appartment which are widely recognised and cherished. Being purple and Gold,they also
+I decided to use the main color scheme in Monica's apartment which are widely recognised and cherished. Being purple and Gold,they also
 go together very aesthicially. I also embedded an image of the notorious yellow frame which sits on Monica's door, another instantly recognisable feature on the sitcom.
 The colors are used for the rules page and the main page for fluidity.
 
@@ -231,6 +236,31 @@ Here are the following steps I used to deploy the website from Github repository
 
 The live link can be found here:
 [Friends Quiz](https://rdeswart.github.io/friends-quiz/)
+
+### Cloning the repository
+To clone the repository locally:
+
+1. Log in to Github and find the repository.
+2. Click on the green "Code" button.
+3. Click the "Local" tab, and choose HTTPS, SSH or Github CLI.
+4. Copy the link shown.
+5. Open Git Bash or Terminal.
+6. Change the current working directory to where you would like the cloned directory.
+7. In the IDE terminal, paste the link you copied in step 4.
+8. Press Enter to create the local clone.
+
+### Forking the repository
+To fork the repository:
+
+1. Login to Github and find the repository.
+2. Click on the "Fork" button at the top of the screen.
+3. On "Create New Fork" page, rename the repository.
+4. Click "Create Fork" at the bottom of the form.
+
+
+
+
+
 ## Credits
 ### Content
 The wireframe was created using [Balsamiq](https://balsamiq.com/)

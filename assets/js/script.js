@@ -202,11 +202,12 @@ function startQuiz() {
             var error = document.getElementById("error");
             if (!answerSelected && submitButton.innerText !== "Play Again?") {
                 error.innerHTML = "<span style='color: red;'>" +
-                    " Please choose an answer! ";
-                return;
+                    " Please choose an answer to proceed! ";
+                // return;
             } else {
                 error = document.getElementById("error");
                 error.style.display= "none";
+                return;
             }
 
             if (submitButton.innerText === "Play Again?") {
